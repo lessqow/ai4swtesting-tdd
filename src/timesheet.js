@@ -9,6 +9,9 @@ class Timesheet {
     getTimesheets() {
       return [...this.timesheets.values()];
     }
+    getTotalTimesheetHours(projectName) {
+        return this.timesheets.get(projectName);
+      }
   }
   
   module.exports = Timesheet;
